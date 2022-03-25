@@ -332,5 +332,15 @@ nav {
     .header_content {
         margin-top: 50px;
     }
+    .page-title {
+        font-size: 3.5rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.2rem;
+    }
+    .nav-contato span p {
+        font-size: .9rem;
+    }
 }
 
