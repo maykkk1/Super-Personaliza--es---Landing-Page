@@ -312,9 +312,7 @@ nav {
     }
 
     .header_content {
-        margin-top: 18%;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
 
     .header_content__left {
@@ -323,10 +321,16 @@ nav {
 
     .header_content__right {
         width: 98%;
-        height: max-content;
+        justify-content: center;
+        height: 100vh;
         padding: 15px 0;
+        gap: 15px;
     }
 }
 
-
+@media (max-width: 420px) {
+    .header_content {
+        margin-top: 50px;
+    }
+}
 
