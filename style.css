@@ -12,6 +12,16 @@
   --secundary-color: #ffbd30;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(99, 95, 95);
+  background-image: url('./assets/images/comics-bg.jpg');
+  background-size: 100%;
+}
+
 /*------------------- HEADER*/
 header {
   position: relative;
@@ -21,6 +31,7 @@ header {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  box-shadow: 2px 2px 3px black;
 }
 
 .bg-img-wrapper {
@@ -229,6 +240,13 @@ nav img {
   font-weight: bold;
   border: 6px solid black;
   box-shadow: -8px 8px black;
+  transition: 400ms;
+}
+
+.header-btn:hover {
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+  #f3d676;
+background-size: 13px, 100%;
 }
 
 header img {
@@ -238,10 +256,68 @@ header img {
   bottom: 0;
 }
 
+
+/* ----------- QUEM SOMOS------- */
+.quem-somos {
+  margin-top: 50px;
+  width: 80%;
+  min-height: 60vh;
+  height: max-content;
+  display: flex;
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 2px 2px 3px black;
+  overflow: hidden;
+}
+
+.quem-somos__texto {
+  width: 50%;
+  padding:45px;
+}
+
+.quem-somos__texto h2 {
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: 30px;
+}
+
+.quem-somos__texto h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+  background-color: var(--secundary-color);
+}
+
+.quem-somos__texto p {
+  font-size: 1.5rem;
+}
+
+.quem-somos__imagem {
+  width: 50%;
+}
+
+.quem-somos__imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
 @media (max-width: 1050px) {
   .nav-content {
     width: 100%;
   }
+  .quem-somos {
+    width: 95%;
+  }
+
 }
 @media (max-width: 930px) {
   .nav-content {
@@ -279,6 +355,31 @@ header img {
   .nav-items.open {
     bottom: -228px;
     height: 230px;
+  }
+
+  .quem-somos {
+    flex-direction: column;
+  }
+  .quem-somos__imagem,
+  .quem-somos__texto {
+    width: 100%;
+  }
+
+  .quem-somos__texto {
+    height: max-content;
+    padding: 15px;
+  }
+
+  .quem-somos__texto h2 {
+    font-size: 3rem;
+  }
+
+  .quem-somos__texto p {
+    font-size: 1.2rem;
+  }
+
+  .quem-somos__imagem {
+    height: 350px;
   }
 }
 @media (max-width: 600px) {
