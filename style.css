@@ -18,7 +18,7 @@ main {
   align-items: center;
   width: 100%;
   background-color: rgb(99, 95, 95);
-  background-image: url('./assets/images/comics-bg.jpg');
+  background-image: url("./assets/images/comics-bg.jpg");
   background-size: 100%;
 }
 
@@ -245,8 +245,8 @@ nav img {
 
 .header-btn:hover {
   background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
-  #f3d676;
-background-size: 13px, 100%;
+    #f3d676;
+  background-size: 13px, 100%;
 }
 
 header img {
@@ -255,7 +255,6 @@ header img {
   right: 0;
   bottom: 0;
 }
-
 
 /* ----------- QUEM SOMOS------- */
 .quem-somos {
@@ -273,7 +272,7 @@ header img {
 
 .quem-somos__texto {
   width: 50%;
-  padding:45px;
+  padding: 45px;
 }
 
 .quem-somos__texto h2 {
@@ -310,9 +309,9 @@ header img {
   color: white;
   font-weight: bolder;
   background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
-  rgb(209, 104, 104);
-background-size: 12px, 100%;
-background-size: 10px, 100%;
+    rgb(209, 104, 104);
+  background-size: 12px, 100%;
+  background-size: 10px, 100%;
 }
 
 .quem-somos__imagem {
@@ -327,7 +326,7 @@ background-size: 10px, 100%;
 
 .produtos {
   width: 80%;
-  height: 65vh;
+  height: max-content;
   border: 15px solid black;
   border-top: none;
   margin-bottom: 30px;
@@ -350,8 +349,74 @@ background-size: 10px, 100%;
   margin: 15px auto;
 }
 
+.produtos__container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.produto__card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
 
+.produto__card h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+}
+
+.produto__card__imgWrapper {
+  width: 270px;
+  height: 270px;
+  border: 10px solid black;
+  margin-bottom: 10px;
+}
+
+.produto__card__imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.produto__card__btn-preco {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.produto__card__btn-preco button {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border: none;
+  color: black;
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+  #ffcd28;
+  background-size: 12px, 100%;
+  background-size: 10px, 100%;
+  border: 3px solid black;
+  box-shadow: -3px 3px black;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+
+.produto__card__btn-preco button:hover {
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.8" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23d68810"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #f3d676;
+  background-size: 13px, 100%;
+}
+
+.produto__card__btn-preco span {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
 
 @media (max-width: 1050px) {
   .nav-content {
@@ -366,7 +431,6 @@ background-size: 10px, 100%;
   .produtos {
     border-top: none;
   }
-
 }
 @media (max-width: 930px) {
   .nav-content {
@@ -439,11 +503,11 @@ background-size: 10px, 100%;
     font-size: 0.7rem;
   }
   .page-title {
-      font-size: 3rem;
+    font-size: 3rem;
   }
   .page-subtitle {
-      font-size: 1rem;
-      padding: 15px;
+    font-size: 1rem;
+    padding: 15px;
   }
   .produtos h2 {
     font-size: 1rem;
