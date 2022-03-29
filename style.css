@@ -21,6 +21,7 @@ main {
   background-color: rgb(99, 95, 95);
   background-image: url("./assets/images/comics-bg.jpg");
   background-size: 100%;
+  overflow: hidden;
 }
 
 /*------------------- HEADER*/
@@ -343,6 +344,16 @@ header img {
   text-align: center;
 }
 
+.produtos h2::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 5px;
+  border-radius: 3px;
+  margin: 0 auto;
+  background-color: var(--secundary-color);
+}
+
 .produtos__container {
   display: flex;
   justify-content: space-around;
@@ -433,8 +444,6 @@ header img {
   box-shadow: 0 5px rgba(0, 0, 0, 0.466);
 }
 
-
-
 .contato form {
   width: 550px;
   background-color: white;
@@ -470,6 +479,12 @@ header img {
   cursor: pointer;
   margin-bottom: 20px;
   padding: 5px 0;
+}
+
+.onde-nos-encontrar {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
 
 
