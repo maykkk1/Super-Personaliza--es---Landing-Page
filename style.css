@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
 * {
   padding: 0;
@@ -11,6 +11,10 @@
 :root {
   --primary-color: #fe0002;
   --secundary-color: #ffbd30;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 main {
@@ -53,7 +57,7 @@ header {
 
 /*------------------- NAV*/
 nav {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   top: 0;
   z-index: 100;
@@ -356,8 +360,9 @@ header img {
 
 .produtos__container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-content: center;
+  gap: 20px;
   align-items: center;
   flex-wrap: wrap;
   border: 2px solid rgba(0, 0, 0, 0.123);
@@ -404,7 +409,7 @@ header img {
   border: none;
   color: black;
   background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(25)" opacity="0.3" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
-  #ffcd28;
+    #ffcd28;
   background-size: 12px, 100%;
   background-size: 10px, 100%;
   border: 3px solid black;
@@ -436,8 +441,8 @@ header img {
   background-color: black;
   color: white;
   display: flex;
-  justify-content:center ;
-  padding: 10px ;
+  justify-content: center;
+  padding: 10px;
   text-transform: lowercase;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -485,6 +490,108 @@ header img {
   width: 100%;
   height: 400px;
   overflow: hidden;
+}
+
+footer {
+  background-color: #3a3837;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  padding: 15px;
+  width: 90%;
+  gap: 55px;
+  border: 1px solid white;
+  margin: 15px;
+}
+
+.mapa-do-site {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mapa-do-site li a {
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: 400ms;
+}
+.mapa-do-site li a:hover {
+  color: var(--primary-color);
+}
+
+.footer-redes {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-redes h3 {
+  font-size: 2rem;
+}
+
+.footer-facebook a {
+  background-color: #5672aa;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px 50px;
+  border-radius: 60px;
+  transition: 400ms;
+}
+.footer-facebook a:hover {
+  color: #3a3837;
+}
+
+.footer-instagram a{
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px 50px;
+  border-radius: 60px;
+  transition: 400ms;
+}
+.footer-instagram a:hover {
+  color: #3a3837;
+}
+
+.footer-copy {
+  margin: 15px 0;
 }
 
 
@@ -581,11 +688,23 @@ header img {
   .contato form {
     width: 95%;
   }
-  .contato h2{
+  .contato h2 {
     width: 90%;
   }
   .contato form button {
     width: 280px;
   }
 
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa-do-site {
+    flex-direction: row;
+  }
+
+  .mapa-do-site li a{
+    font-size: 1rem;
+  }
 }

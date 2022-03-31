@@ -8,7 +8,7 @@
     <title>Super Personalizações</title>
   </head>
   <body>
-    <header>
+    <header id="Home">
       <div class="bg-img-wrapper">
         <img
           src="./assets/images/header-bg.webp"
@@ -21,10 +21,10 @@
             <ul class="social-links">
               <img src="./assets/images/logo.webp" alt="logo da empresa" />
               <li>
-                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/SuperPersonalizacoes" target="_blank"><i class="fab fa-facebook"></i></a>
               </li>
               <li>
-                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/superpersonalizacoes/" target="_blank"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
             <div class="nav-contato">
@@ -44,10 +44,10 @@
             </div>
           </div>
           <ul class="nav-items" id="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre nós</a></li>
-            <li><a href="">Produtos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#contato">Contato</a></li>
           </ul>
         </div>
       </nav>
@@ -66,7 +66,7 @@
       <img src="./assets/images/logo.webp" alt="logo da empresa" />
     </header>
     <main>
-      <section class="quem-somos">
+      <section id="quem-somos" class="quem-somos">
         <div class="quem-somos__texto">
           <h2>Quem somos</h2>
           <p>
@@ -84,7 +84,7 @@
           </div>
         </div>
       </section>
-      <section class="produtos">
+      <section id="produtos" class="produtos">
         <h2>Produtos Personalizados</h2>
         <div class="produtos__container">
           <div class="produto__card">
@@ -177,7 +177,7 @@
           </div>
         </div>
       </section>
-      <section class="contato">
+      <section id="contato" class="contato">
         <h2>Contato</h2>
           <form action="">
             <input type="text" placeholder="Nome" name="nome" id="nome">
@@ -188,11 +188,28 @@
           </form>
       </section>
       <section class="onde-nos-encontrar">
-        <h2>Saiba onde nos encontrar</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15381.350213921067!2d-47.61667899999998!3d-15.466264999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x935a6f61813bcba3%3A0x7f5108a1d0a3993b!2sSuper%20Personaliza%C3%A7%C3%B5es%2C%20Quadra%2001%20MR%2006%20Lote%2026%20-%20St.%20Leste%2C%20Planaltina%20-%20GO!3m2!1d-15.4553482!2d-47.608280199999996!5e0!3m2!1spt-BR!2sbr!4v1648596291786!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <ul class="mapa-do-site">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <ul class="footer-redes">
+          <h3>Siga-nos</h3>
+          <li class="footer-facebook"><a href="">Facebook</a></li>
+          <li class="footer-instagram"><a href="">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-copy">
+        <p> Copyright &copy; 2022 - Todos os direitos reservados. </p>
+      </div>
+
+    </footer>
     <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/619f70976e.js"
