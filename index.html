@@ -39,7 +39,7 @@
                 <p>(61) 99268-5706</p></span
               >
             </div>
-            <div class="menu-btn" id="menu-btn">
+            <div class="menu-btn" id="menu-btn" role="button">
               <div class="menu-btn__burguer"></div>
             </div>
           </div>
@@ -181,8 +181,11 @@
         <h2>Contato</h2>
           <form action="">
             <input type="text" placeholder="Nome" name="nome" id="nome">
+            <span>Digite o seu nome!</span>
             <input type="email" placeholder="E-mail" name="email" id="email">
-            <input type="tel" placeholder="Telefone" name="telefone" id="telefone">
+            <span>Digite um E-mail válido!</span>
+            <input type="tel" placeholder="Telefone (xx)9xxx-xxxxx" name="telefone" id="telefone">
+            <span>Digite um telefone válido!</span>
             <textarea name="mensagem" id="mensagem" cols="30" placeholder="Mensagem" rows="10"></textarea>
             <button type="submit">Enviar</button>
           </form>

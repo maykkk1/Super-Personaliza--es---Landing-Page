@@ -67,22 +67,26 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 .nav-content {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .header-info {
   display: flex;
   align-items: center;
 }
+
 .social-links {
   display: flex;
   list-style: none;
   gap: 5px;
   margin-right: 10px;
 }
+
 .social-links li {
   width: 50px;
   height: 50px;
@@ -101,12 +105,15 @@ nav {
   color: var(--primary-color);
   transition: 400ms;
 }
+
 .social-links li a:hover {
   color: white;
 }
+
 nav img {
   display: none;
 }
+
 .nav-contato {
   display: flex;
   flex-direction: column;
@@ -159,16 +166,20 @@ nav img {
 .menu-btn__burguer::before {
   transform: translateY(-16px);
 }
+
 .menu-btn__burguer::after {
   transform: translateY(16px);
 }
+
 .menu-btn.open .menu-btn__burguer {
   transform: translateX(-60px);
   background-color: transparent;
 }
+
 .menu-btn.open .menu-btn__burguer::before {
   transform: translate(60px, 0px) rotate(-45deg);
 }
+
 .menu-btn.open .menu-btn__burguer::after {
   transform: translate(60px, 0px) rotate(45deg);
 }
@@ -423,6 +434,7 @@ header img {
     #f3d676;
   background-size: 13px, 100%;
 }
+
 .produto__card__btn-preco span {
   font-size: 1.6rem;
   font-weight: bolder;
@@ -456,17 +468,28 @@ header img {
   display: flex;
   flex-direction: column;
   padding: 20px 35px;
-  gap: 10px;
   box-shadow: 0 10px rgba(0, 0, 0, 0.11);
 }
 
 .contato form input {
   height: 50px;
   padding: 5px;
+  margin-top: 25px;
+  border: 2px solid #3a3837;
+}
+
+.contato form span {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: -14px;
+  display: none;
 }
 
 .contato form textarea {
+  border: 2px solid #3a3837;
   resize: none;
+  margin-top: 25px;
   padding: 5px;
 }
 
@@ -484,7 +507,10 @@ header img {
   cursor: pointer;
   margin-bottom: 20px;
   padding: 5px 0;
+  margin-top: 20px;
 }
+
+
 
 .onde-nos-encontrar {
   width: 100%;
@@ -523,6 +549,7 @@ footer {
   text-decoration: none;
   transition: 400ms;
 }
+
 .mapa-do-site li a:hover {
   color: var(--primary-color);
 }
@@ -548,37 +575,32 @@ footer {
   border-radius: 60px;
   transition: 400ms;
 }
+
 .footer-facebook a:hover {
   color: #3a3837;
 }
 
-.footer-instagram a{
+.footer-instagram a {
   background: #f09433;
-  background: -moz-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: -webkit-linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  background: -moz-linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  background: -webkit-linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  background: linear-gradient(45deg,
+      #f09433 0%,
+      #e6683c 25%,
+      #dc2743 50%,
+      #cc2366 75%,
+      #bc1888 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -586,6 +608,7 @@ footer {
   border-radius: 60px;
   transition: 400ms;
 }
+
 .footer-instagram a:hover {
   color: #3a3837;
 }
@@ -599,17 +622,20 @@ footer {
   .nav-content {
     width: 100%;
   }
+
   .quem-somos {
     width: 95%;
     border: 5px solid black;
     box-shadow: none;
   }
 }
+
 @media (max-width: 930px) {
   .nav-content {
     position: relative;
     flex-direction: column;
   }
+
   .header-info {
     height: 100%;
     width: 100%;
@@ -646,6 +672,7 @@ footer {
   .quem-somos {
     flex-direction: column;
   }
+
   .quem-somos__imagem,
   .quem-somos__texto {
     width: 100%;
@@ -667,30 +694,38 @@ footer {
   .quem-somos__imagem {
     height: 350px;
   }
+
   .produtos h2 {
     font-size: 2rem;
   }
 }
+
 @media (max-width: 600px) {
   .nav-contato span p {
     font-size: 0.7rem;
   }
+
   .page-title {
     font-size: 3rem;
   }
+
   .page-subtitle {
     font-size: 1rem;
     padding: 15px;
   }
+
   .produtos h2 {
     font-size: 1.8rem;
   }
+
   .contato form {
     width: 95%;
   }
+
   .contato h2 {
     width: 90%;
   }
+
   .contato form button {
     width: 280px;
   }
@@ -704,7 +739,7 @@ footer {
     flex-direction: row;
   }
 
-  .mapa-do-site li a{
+  .mapa-do-site li a {
     font-size: 1rem;
   }
 }
